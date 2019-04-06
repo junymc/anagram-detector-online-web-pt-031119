@@ -6,9 +6,9 @@ class Anagram
     @word = word
   end
 
-  def self.match(word)
-    if @word == word
-      return true
+  def match(words_array)
+    words_array.select do |word|
+      @word == word
     end
   end
 
