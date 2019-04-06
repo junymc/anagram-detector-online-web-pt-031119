@@ -11,7 +11,6 @@ class Anagram
     words_array.select do |word|
       @word.split("") == word.split("")
     end
-    words_array
   end
 
 end
